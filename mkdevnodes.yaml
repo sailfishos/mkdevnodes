@@ -1,0 +1,14 @@
+Name       : mkdevnodes
+Version    : 0.2
+Release    : 1
+Group      : Applications/System
+Summary    : Fast MAKEDEV replacement
+Description: |
+        A replacement for MAKEDEV. Instead of parsing hard-coded text files, mkdevnodes uses the information provided in sysfs to generate device nodes with mknod() as needed, as well as a few base device nodes that always need to be present. Mkdevnodes is thus extremely fast, as it doesn not need to read and/or parse text files from the root filesystem.
+Sources    :
+    - mkdevnodes-%{version}.tar.gz
+
+Configure  : none
+License: GPLv2
+Files:
+    - /sbin/mkdevnodes

@@ -1,0 +1,6 @@
+* Thu Oct 21 2010 Auke Kok <auke-jan.h.kok@intel.com> - 0.2
+- Fix compile issue on ARM (don't force arch).
+
+* Thu Oct 21 2010 Auke Kok <auke-jan.h.kok@intel.com> - 0.1
+- Splitting this out of the udev package, posted upstream repo.
+- Initial automated packaging
