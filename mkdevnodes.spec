@@ -14,6 +14,7 @@ License:    GPLv2
 Source0:    mkdevnodes-%{version}.tar.gz
 Source100:  mkdevnodes.yaml
 
+Patch1:    mkdevnodes-0.2-fix_build_with_glibc228.patch
 
 %description
 A replacement for MAKEDEV. Instead of parsing hard-coded text files, mkdevnodes uses the information provided in sysfs to generate device nodes with mknod() as needed, as well as a few base device nodes that always need to be present. Mkdevnodes is thus extremely fast, as it doesn not need to read and/or parse text files from the root filesystem.
@@ -23,6 +24,8 @@ A replacement for MAKEDEV. Instead of parsing hard-coded text files, mkdevnodes 
 
 %prep
 %setup -q -n %{name}-%{version}
+
+%patch1 -p1
 
 # >> setup
 # << setup
