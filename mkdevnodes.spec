@@ -8,7 +8,7 @@
 Name:       mkdevnodes
 Summary:    Fast MAKEDEV replacement
 Version:    0.2
-Release:    1
+Release:    2
 Group:      Applications/System
 License:    GPLv2
 Source0:    mkdevnodes-%{version}.tar.gz
