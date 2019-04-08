@@ -1,0 +1,11 @@
+diff -Naur mkdevnodes-0.2_orig/mkdevnodes.c mkdevnodes-0.2/mkdevnodes.c
+--- mkdevnodes-0.2_orig/mkdevnodes.c	2018-10-17 16:19:26.389589682 +0300
++++ mkdevnodes-0.2/mkdevnodes.c	2018-10-17 16:19:38.257575273 +0300
+@@ -16,6 +16,7 @@
+ #include <stdlib.h>
+ #include <getopt.h>
+ #include <sys/types.h>
++#include <sys/sysmacros.h>
+ #include <sys/stat.h>
+ #include <unistd.h>
+ #include <stdio.h>
